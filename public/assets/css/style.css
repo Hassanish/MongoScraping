@@ -1,1 +1,29 @@
+#scrapeArticles {
+    margin: 5px;
+    color: white;
+    display: inline-block;
+}
 
+#homeButton, #savedButton {
+    color: white;
+}
+
+.jumbotron {
+    background: white;
+    padding: 10px;
+    margin-top: 70px;
+    border-radius: 5px;
+}
+
+.saveArticle {
+    display: inline-block;
+    height: 38px;
+}
+
+.header {
+    color: black;
+}
+
+.card {
+    margin: 30px;
+}
