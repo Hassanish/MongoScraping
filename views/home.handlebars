@@ -1,0 +1,23 @@
+ <div class="col-md-12">
+        {{#if headline}}
+            {{#each headline}}
+            <div class="card card-default">
+                <div class="card-header d-flex justify-content-between">
+                    <a href={{this.link}} target="_blank"><h4 class="header">{{this.title}}</h4></a>
+                    <button type="button" class="btn btn-success saveArticle" data-saved="true" data-id={{this._id}}>Save Article</button>
+
+                    {{!-- {{> buttons/save-article saved=false}} --}}
+                </div>
+                <div class="card-body">
+                    <p> {{this.summary}}</p>
+                </div>
+            </div>
+            {{/each}}
+        {{else}}
+        <div class="card card-default">
+            <div class="card-body">
+            <h4>Uh Oh. Looks like we don't have any new articles.</h4>
+            </div>
+         </div>
+        {{/if}}
+</div>
