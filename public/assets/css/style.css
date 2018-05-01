@@ -1,10 +1,10 @@
-#scrapeArticles {
+#scrapedArticles {
     margin: 5px;
     color: white;
     display: inline-block;
 }
 
-#homeButton, #savedButton {
+#backButton, #savedButton {
     color: white;
 }
 
@@ -20,9 +20,6 @@
     height: 38px;
 }
 
-.header {
-    color: black;
-}
 
 .card {
     margin: 30px;

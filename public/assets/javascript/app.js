@@ -1,4 +1,4 @@
-$("#scrapeArticles").on("click", function(event) {
+$("#scrapedArticles").on("click", function(event) {
     event.preventDefault();
     $.ajax({
         method: "GET",
@@ -10,7 +10,7 @@ $("#scrapeArticles").on("click", function(event) {
     });
 });
 
-$("#homeButton").on("click", function(event) {
+$("#backButton").on("click", function(event) {
     event.preventDefault();
     window.location = "/"
 })
