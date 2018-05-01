@@ -38,7 +38,7 @@ if (process.env.MONGODB_URI) {
    console.log('Mongoose connnection successful.');
  });
 
-var scrapePage = require("./scripts/scrape.js");
+var scrapePage = require("./controllers/scrape.js");
 
 require("./routes/view/htmlRoutes")(app);
 
