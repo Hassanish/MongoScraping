@@ -21,13 +21,9 @@ app.use(express.static("public"));
 
 mongoose.connect("mongodb://localhost/mongoScraper");
 
-var databaseUri = 'mongod://localhost/week18day3mongoose';
-
 if (process.env.MONGODB_URI) {
   mongoose.connect(process.env.MONGODB_URI);
-} else {
-  mongoose.connect(databaseUri);
-}
+} 
  var monDB = mongoose.connection;
 
  monDB.on('error', function(err) {
