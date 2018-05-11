@@ -20,10 +20,12 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
 mongoose.connect("mongodb://localhost/mongoScraper");
-
+var databaseUri ='mongodb://Hassanx:kan621@ds119930.mlab.com:19930/mongoscraping';
 if (process.env.MONGODB_URI) {
   mongoose.connect(process.env.MONGODB_URI);
-} 
+}  else {
+  mongoose.connect(databaseUri);
+}
  var monDB = mongoose.connection;
 
  monDB.on('error', function(err) {
